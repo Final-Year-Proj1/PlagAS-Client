@@ -38,7 +38,7 @@ function plag() {
   console.log("Plagarism Data:", text);
 
   // Make API request to check for plagiarism
-  fetch("http://localhost:5000/api/plag/check-plag", {
+  fetch("https://plagas-server.onrender.com/api/plag/check-plag", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -133,7 +133,7 @@ function grammar() {
   console.log("Grammar Data:", text);
 
   // Make API request to check for plagiarism
-  fetch("http://localhost:5000/api/grammar/check-grammar", {
+  fetch("https://plagas-server.onrender.com/api/grammar/check-grammar", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

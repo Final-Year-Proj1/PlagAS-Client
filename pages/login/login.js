@@ -45,7 +45,7 @@ function userFormSubmit() {
       password: password,
     });
 
-    fetch("http://localhost:5000/api/user/register", {
+    fetch("https://plagas-server.onrender.com/api/user/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -109,7 +109,7 @@ function userLogin() {
       password: password,
     });
 
-    fetch("http://localhost:5000/api/user/login", {
+    fetch("https://plagas-server.onrender.com/api/user/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
