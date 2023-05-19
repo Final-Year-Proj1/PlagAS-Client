@@ -121,7 +121,7 @@ function userLogin() {
         console.log("Login Data:", data);
         if (data.status == 200) {
           localStorage.setItem("username", data.user.username);
-          window.location.href = "PlagAS-Client/pages/dashboard/dashboard.html";
+          window.location.href = "/dashboard.html";
         }
       })
       .catch((error) => {
