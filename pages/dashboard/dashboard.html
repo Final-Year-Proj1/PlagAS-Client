@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Plagiarism Checker Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="title">
+      <p class="title-text">
+        Plagarism and Grammer Checker
+      </p>
+      <div class="user">
+        Hello,
+        <div class="dropdown">
+          <button id="username" class="dropbtn"></button>
+          <div class="dropdown-content">
+            <a href="#" style="display: flex;">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="logout-svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+              </svg>
+              Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs_wrap">
+      <div class="tab-buttons">
+        <button id="plagiarismCheckerButton" class="active">Plagiarism Checker</button>
+        <button id="grammarCheckerButton">Grammar Checker</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="tab plagiarismChecker active">
+        <div class="container-plag">
+          <h2>Plagiarism Checker</h2>
+          <form onsubmit="return false;">
+            <div class="input-group">
+              <label for="text">Enter your text:</label>
+              <textarea id="text-plag" placeholder="Enter your text here"></textarea>
+            </div>
+            <button onclick="plag()" class="checkButton-plag">Check for Plagiarism</button>
+          </form>
+          <div class="loader" id="loader"></div>
+          <div class="result-plag" id="result-plag"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab grammarChecker">
+      <div class="container-grammar">
+        <h2>Grammar Checker</h2>
+        <form onsubmit="return false;">
+          <div class="input-group">
+            <label for="text">Enter your text:</label>
+            <textarea id="text-grammar" placeholder="Enter your text here"></textarea>
+          </div>
+          <button onclick="grammar()" type="submit" class="checkButton-grammar">Check for Grammar</button>
+        </form>
+        <div class="result-grammar" id="result-grammar"></div>
+      </div>
+    </div>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+
+</html>
